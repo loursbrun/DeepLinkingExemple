@@ -40,6 +40,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        print("url \(url)")
+        print("url host :\(url.host!)")
+        print("url path :\(url.path)")
+        
+        
+        
+        let urlPath : String = url.path as String!
+        let urlHost : String = url.host as String!
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        if(urlHost != "swiftdeveloperblog.com")
+        {
+            print("Host is not correct")
+            return false
+        }
+        
+        
+     if(urlPath == "/inner"){
+        
+        let innerPage: InnerPageViewController = mainStoryboard.instantiateViewController(withIdentifier: "InnerPageViewController") as! InnerPageViewController
+        
+        self.window?.rootViewController = innerPage
+     } else if(urlPath == "/about"){
+        
+    }
+        self.window?.makeKeyAndVisible()
+        return true
+    }
 
 
 }

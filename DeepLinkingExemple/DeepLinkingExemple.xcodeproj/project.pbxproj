@@ -12,6 +12,7 @@
 		223278091F156C6100053C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223278071F156C6100053C70 /* Main.storyboard */; };
 		2232780B1F156C6100053C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2232780A1F156C6100053C70 /* Assets.xcassets */; };
 		2232780E1F156C6100053C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2232780C1F156C6100053C70 /* LaunchScreen.storyboard */; };
+		223278161F15720000053C70 /* InnerPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223278151F15720000053C70 /* InnerPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2232780A1F156C6100053C70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2232780D1F156C6100053C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2232780F1F156C6100053C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223278151F15720000053C70 /* InnerPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				223278031F156C6100053C70 /* AppDelegate.swift */,
+				223278151F15720000053C70 /* InnerPageViewController.swift */,
 				223278051F156C6100053C70 /* ViewController.swift */,
 				223278071F156C6100053C70 /* Main.storyboard */,
 				2232780A1F156C6100053C70 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				223278061F156C6100053C70 /* ViewController.swift in Sources */,
 				223278041F156C6100053C70 /* AppDelegate.swift in Sources */,
+				223278161F15720000053C70 /* InnerPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
